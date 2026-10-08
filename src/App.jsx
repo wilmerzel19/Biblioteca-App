@@ -20,9 +20,9 @@ const menu = [
   { to: "/", label: "Inicio", icon: Home },
   { to: "/biblia", label: "Biblia", icon: BookOpen },
   { to: "/biblioteca", label: "Biblioteca", icon: Library },
-  { to: "/himnos", label: "Celebremos su Gloria", icon: Music2 },
-  { to: "/himnario-evangelio", label: "Himnos varios", icon: StickyNote },
-  { to: "/himnos-coros", label: "Cantar Alegres", icon: Music2 },
+  { to: "/himnos", label: "Himnos", icon: Music2 },
+  { to: "/himnario-evangelio", label: "Himnario Evangelio", icon: StickyNote },
+  { to: "/himnos-coros", label: "Himnos de Coros", icon: Music2 },
   { to: "/lecturas-diarias", label: "Lecturas Diarias", icon: Headphones },
   { to: "/presentacion", label: "Presentación", icon: Presentation },
 ];
@@ -111,9 +111,9 @@ export default function App() {
               <Route path="/" element={<Inicio data={data} />} />
               <Route path="/biblia" element={<Biblia data={data.biblia} />} />
               <Route path="/biblioteca" element={<Biblioteca data={data} />} />
-              <Route path="/himnos" element={<Himnos data={data.himnos} audios={data.audiosHimnos} tituloSeccion="Celebremos su Gloria" tituloVacio="No hay himnos" archivoAyuda="public/data/himnos.json" />} />
-              <Route path="/himnario-evangelio" element={<Himnos data={data.himnarioEvangelio} audios={data.audiosHimnarioEvangelio} tituloSeccion="Himnos varios" tituloVacio="No hay himnos en Himnario Evangelio" archivoAyuda="public/data/himnario-evangelio.json" />} />
-              <Route path="/himnos-coros" element={<Himnos data={data.himnosCoros} audios={data.audiosHimnosCoros} tituloSeccion="Cantar Alegres" tituloVacio="Todavía no hay coros agregados" archivoAyuda="public/data/himnos-coros.json" />} />
+              <Route path="/himnos" element={<Himnos data={data.himnos} audios={data.audiosHimnos} tituloSeccion="Himnos" tituloVacio="No hay himnos" archivoAyuda="public/data/himnos.json" />} />
+              <Route path="/himnario-evangelio" element={<Himnos data={data.himnarioEvangelio} audios={data.audiosHimnarioEvangelio} tituloSeccion="Himnario Evangelio" tituloVacio="No hay himnos en Himnario Evangelio" archivoAyuda="public/data/himnario-evangelio.json" />} />
+              <Route path="/himnos-coros" element={<Himnos data={data.himnosCoros} audios={data.audiosHimnosCoros} tituloSeccion="Himnos de Coros" tituloVacio="Todavía no hay coros agregados" archivoAyuda="public/data/himnos-coros.json" />} />
               <Route path="/lecturas-diarias" element={<LecturasDiarias data={data.lecturasDiariasUnanimes} />} />
               <Route path="/devocionales" element={<Devocionales dataSemilla={data.buenasemillas} dataSenor={data.elSenorEstaCerca} />} />
               <Route path="/presentacion" element={<Presentacion data={data} />} />
