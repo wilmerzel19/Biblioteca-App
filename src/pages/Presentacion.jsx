@@ -123,6 +123,7 @@ export default function Presentacion() {
       ) : (
         <div className={`pp-stage pp-project anim-${animacion}`} style={{background:temaActual.bg,color:temaActual.color,textAlign:alineacion}}>
           <button className="presentation-close" onClick={close}><X/></button>
+          
           <div className="pp-glow"/>
           <div className="pp-stage-inner" style={{fontSize:`${tamano}%`}}>
             <span className="pp-small">MI BIBLIOTECA BÍBLICA</span>
